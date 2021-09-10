@@ -153,7 +153,13 @@ function getNextPalindromeDate(date){
 function clickHandler(){
   var birthDate=birthDayInput.value;
 
-  if(birthDayInput !==''){
+  if(birthDate == ""){
+
+    display.innerHTML="please enter date !!";
+
+  }
+
+ else if(birthDayInput !==''){
     var dateList=birthDate.split('-');
 
     var date={
